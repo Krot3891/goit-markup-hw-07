@@ -258,21 +258,131 @@ background-color: var(--accent-color);
 
 /*----------SECTION ADVANTAGES-----------*/
 
+.advantages {
+padding-top: 96px;
+padding-bottom: 96px;
+/* padding-top: 96px;
+padding-bottom: 96px; */
+}
+
+.advantages-list {
+
+/* display: flex;
+gap: 24px; */
+}
+
+.advantages-item {
+
+/* width: 100%; */
+}
+
+.icon-box {
+
+/* display: none; */
+/* display: flex;
+justify-content: center;
+align-items: center;
+width: 264px;
+height: 112px;
+background-color: #F4F4FD;
+margin-bottom: 24px;
+border-radius: 4px;
+margin-bottom: 8px; */
+}
+
+.subtitle-text {
+margin-bottom: 8px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+/* font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+margin-bottom: 8px; */
+}
+
+.basic-text {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+/* font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--secondary-text-color); */
+}
+
+@media screen and (max-width: 767px) {
+.subtitle-text {
+text-align: center;
+}
 
 
+.advantages-item:not(:last-child) {
+margin-bottom: 72px;
+}
+
+.basic-text {
+max-width: 396px;
+}
+}
+
+@media screen and (max-width: 1157px) {
+.advantages-container {
+padding-right: 16px;
+padding-left: 16px;
+}
+
+.icon-box {
+display: none;
+}
+}
+
+@media screen and (min-width: 768px) {
+.advantages-list {
+display: flex;
+}
+
+.advantages-item {
+flex-basis: calc((100% - 24px) / 2);
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+.advantages-list {
+flex-wrap: wrap;
+row-gap: 72px;
+column-gap: 24px;
+}
+}
+
+@media screen and (min-width: 1158px) {
 .advantages {
 padding-top: 120px;
 padding-bottom: 120px;
 }
 
 .advantages-list {
-display: flex;
 gap: 24px;
-
 }
 
 .advantages-item {
-width: calc((100% - 72px) / 4);
+flex-basis: calc((100% - 72px) / 4);
+}
+
+.subtitle-text {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+
+.basic-text {
+font-weight: 400;
 }
 
 .icon-box {
@@ -281,27 +391,10 @@ justify-content: center;
 align-items: center;
 width: 264px;
 height: 112px;
-background-color: #F4F4FD;
-margin-bottom: 24px;
+margin-bottom: 8px;
+background-color: var(--primary-background-color);
 border-radius: 4px;
-margin-bottom: 8px;
 }
-
-.subtitle-text {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: var(--primary-text-color);
-margin-bottom: 8px;
-}
-
-.basic-text {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--secondary-text-color);
 }
 
 /*----------SECTION SERVICES-----------*/
