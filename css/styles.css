@@ -1585,8 +1585,6 @@ margin-right: 80px;
 /*================BACKDROP==============*/
 
 
-/* -------------ПАУЗА---------------- */
-
 .backdrop {
 position: fixed;
 top: 0;
@@ -1610,6 +1608,7 @@ transition: opacity var(--anim-main), visibility var(--anim-main); */
 } 
 
 .backdrop.is-hidden .modal {
+    
 transform: translate(-50%, -50%) scale(0.9);
 opacity: 0;
 
@@ -2035,14 +2034,6 @@ transition: background-color var(--anim-main); */
 /* color: var(--white-color);
 background-color: var(--accent-color); */
 }
-
-/* --------------ПАУЗА--------------- */
-
-
-
-
-
-
 
 /*================PORTFOLIO==============*/
 
